@@ -1,0 +1,16 @@
+sudo su
+apt install python3-pip -y
+apt install ansible-core -y
+apt install ansible -y
+pip install ansible-galaxy
+
+ansible-galaxy init /etc/ansible/roles/apache --offline
+tree /etc/ansible/roles/apache/
+cd /etc/ansible/roles/apache
+vi tasks/main.yml
+------------------------------------------------------------------------------------------------------------
+mkdir base
+cd base
+mkdir roles
+cd roles
+------------------------------------------------------------------------------------------------------------
